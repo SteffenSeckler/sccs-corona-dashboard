@@ -22,7 +22,12 @@ export default function App() {
             Start Simulation
           </button>
         </div>
-        <SplitPane split="vertical" minSize={50} defaultSize={"50%"}>
+        <SplitPane
+          split="vertical"
+          minSize={100}
+          maxSize={-100}
+          defaultSize={"50%"}
+        >
           <div className="simulationDiv" />
           <div className="statisticsDiv" />
         </SplitPane>
