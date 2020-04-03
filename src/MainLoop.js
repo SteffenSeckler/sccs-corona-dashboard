@@ -6,6 +6,8 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// TODO:
+// * potentially add sth. like start/stop mechanics.
 export default async function mainLoop() {
   document.getElementById("mainButton").disabled = true;
   var simulation = new Simulation(100);
