@@ -3,6 +3,15 @@ import "./styles.css";
 import SplitPane from "react-split-pane";
 import mainLoop from "./MainLoop.js";
 
+// TODO:
+// * eventually add additional setting possibilities to settingsDiv.
+// Possible settings:
+// * people movement
+// * infection radius
+// * times until healthy
+// * time until dead
+// * death rate
+// * ...
 export default function App() {
   return (
     <div className="App">

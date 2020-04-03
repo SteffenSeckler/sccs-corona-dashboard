@@ -15,6 +15,8 @@ export default async function mainLoop() {
     simulation.advance();
     simRenderer.render(simulation);
     statRenderer.render(simulation);
+    // TODO:
+    // * change this accoring to the simulation speed.
     await sleep(50);
   }
   document.getElementById("mainButton").disabled = false;

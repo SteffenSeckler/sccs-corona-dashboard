@@ -34,7 +34,9 @@ export default class Simulation {
 
   generatePeople(numberOfPersons) {
     this.people = [];
-    // TODO: generate numberOfPersons people with random positions between 0 and 1!
+    // TODO:
+    // * generate numberOfPersons people with random positions between 0 and 1!
+    // * one person needs to be infected at the beginning.
     this.people.push(new Person(0.4, 0.2));
     this.people.push(new Person(0.8, 0.8));
   }
@@ -43,20 +45,21 @@ export default class Simulation {
     return this.people;
   }
 
-  getRunning() {
-    return true;
-  }
-
   getSimStep() {
     return this.simStep;
   }
 
   isFinished() {
+    // TODO:
+    // * End the simulation, if the virus is no longer existent.
     return this.simStep >= 100;
   }
 
   advance() {
-    // TODO:
     this.simStep += 1;
+    // TODO: advance the simulation:
+    // * let the people walk (randomly?)
+    // * let infected people infect other people
+    // * let people that are infected get healed or put them in a dead state.
   }
 }
