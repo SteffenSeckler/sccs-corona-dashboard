@@ -3,18 +3,18 @@
   text-align: center;
 }
 
-.settingsPane,
-.simulationPane,
-.statisticsPane {
+.settingsDiv,
+.simulationDiv,
+.statisticsDiv {
   width: 100%;
   height: 100%;
 }
 
-.simulationPane {
+.simulationDiv {
   background: red;
 }
 
-.statisticsPane {
+.statisticsDiv {
   background: blue;
 }
 
