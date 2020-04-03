@@ -8,6 +8,7 @@ function sleep(ms) {
 
 // TODO:
 // * potentially add sth. like start/stop mechanics.
+// * more parameters (see App.js)
 export default async function mainLoop() {
   document.getElementById("mainButton").disabled = true;
   var simulation = new Simulation(100);

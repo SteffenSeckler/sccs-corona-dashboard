@@ -6,6 +6,7 @@ import mainLoop from "./MainLoop.js";
 // TODO:
 // * eventually add additional setting possibilities to settingsDiv.
 // Possible settings:
+// * number of people
 // * people movement
 // * infection radius
 // * times until healthy
